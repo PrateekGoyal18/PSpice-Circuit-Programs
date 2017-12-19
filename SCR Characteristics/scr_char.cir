@@ -1,0 +1,12 @@
+SCR Characteristics
+
+X1 1 2 0 2N1595
+Rl 5 1 500
+R2 2 4 2k
+V1 4 0 5
+
+Vin 5 0 sin(0 12 50)
+.tran 50u 100m 50u
+.lib nom.lib
+.probe
+.end

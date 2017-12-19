@@ -1,0 +1,54 @@
+
+**** 11/09/15 16:37:07 *********** Evaluation PSpice (Nov 1999) **************
+
+ Low Pass Filter
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+C1 2 0 1u
+R1 1 2 1k
+Vin 1 0 ac 1 sin(0 1 2k)
+.ac dec 10 1 20k
+.probe 
+.end
+
+**** 11/09/15 16:37:07 *********** Evaluation PSpice (Nov 1999) **************
+
+ Low Pass Filter
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    Vin          0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

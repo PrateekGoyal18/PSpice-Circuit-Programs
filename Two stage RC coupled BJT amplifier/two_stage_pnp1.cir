@@ -1,0 +1,27 @@
+Frequency Response of two stage RC coupled BJT amplifier(pnp) without feedbeck resistance
+
+Q11 5 3 4 Q2N3906
+Q22 9 7 8 Q2N3906
+R1 3 6 200k
+R2 3 0 50k
+Rc1 5 6 12k
+Rc2 9 6 6.8k
+Re1 4 0 3.6k
+Re2 8 0 3.6k
+Rs 1 2 150
+RL 10 0 10k
+Rl1 7 6 120k
+R22 7 0 30k
+Cc1 2 3 10u
+Cc2 5 7 25u
+Cc3 9 10 10u
+Ce1 4 0 10u
+Ce2 8 0 25u
+Vcc 6 0 15V
+Vin 1 0 ac 0.1mV sin(0 0.1mV 1k)
+
+.tran 50u 4m 50u
+.ac dec 10 1 20k
+.lib nom.lib
+.probe
+.end

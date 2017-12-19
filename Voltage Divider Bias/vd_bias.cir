@@ -1,0 +1,13 @@
+Voltage Divider Bias. Measure the bias point Ic and Vce
+
+Q1 3 2 1 Q2N2222
+Vcc 4 0 15V
+R1 2 0 10k
+R2 2 4 2k
+Rc 3 4 5k
+Re 1 0 1.5k
+
+.op
+.lib nom.lib
+.probe
+.end

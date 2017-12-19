@@ -1,0 +1,11 @@
+*ujt relaxation
+x1 b2 e b1 2N2646
+.lib nom.lib 
+c e 0 0.1u IC=1
+r p e 10k
+rb2 p b2 1k
+rb1 b1 0 5 
+vp p 0 dc 10 
+.tran 0.01m 4m 0 0.01m UIC
+.probe 
+.end

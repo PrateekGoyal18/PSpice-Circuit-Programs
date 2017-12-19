@@ -1,0 +1,20 @@
+Single stage RC coupled bjt amplifier(pnp)
+
+Q1 6 3 5 Q2N3906
+Rc 4 6 10k
+R1 4 3 3k
+R2 3 0 47k
+Re 5 0 2k
+Rs 2 1 500
+RL 7 0 20k
+Cc1 2 3 1u
+Cc2 6 7 1u
+Ce 5 0 10u
+Vcc 0 4 15
+Vin 1 0 ac 10mv sin(0 10mv 1k)
+
+.tran 50u 2m 50u
+.ac dec 10 10 20k
+.lib nom.lib
+.probe
+.end

@@ -1,0 +1,8 @@
+Low Pass Filter
+
+C1 2 0 1u
+R1 1 2 1k
+Vin 1 0 ac 1 sin(0 1 2k)
+.ac dec 10 1 20k
+.probe 
+.end

@@ -1,0 +1,20 @@
+*Op Amp 
+.subckt opamp 3 2 6 
+R1 3 2 2MEG
+R2 3  0 40Meg 
+R3 2  0 40Meg 
+R4 1  4  32K
+R5 5 6 75
+C1 4 0 1u
+E1 1 0 3 2 2e5
+E2 5 0 4 0 1
+.ends
+
+X1 0 2 6 opamp
+R1 1 2 1K
+R2 2 6 10K
+V1 1 0 sin(0 1 1K)
+
+.tran 0.01m 2m 0 0.01m
+.probe
+.end

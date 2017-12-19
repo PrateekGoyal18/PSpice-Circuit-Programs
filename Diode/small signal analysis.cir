@@ -1,0 +1,11 @@
+
+D1 0 1 D1N4002
+R1 1 2 1K
+V1 2 3 1V
+V2 0 3 sin(0 6 100)
+
+.lib eval.lib
+.tran 0.1m 50m 30m 0.1m
+.dc lin V1 0 8 0.01
+.probe
+.end

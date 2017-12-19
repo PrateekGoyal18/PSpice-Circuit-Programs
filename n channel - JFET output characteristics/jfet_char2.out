@@ -1,0 +1,60 @@
+
+**** 11/09/15 19:22:34 *********** Evaluation PSpice (Nov 1999) **************
+
+ n-JFET transfer characteristics  Id v/s Vgs
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+Vgs 0 1 4V
+Vds 2 0 10V
+J1 2 1 0 J2N3819
+
+.lib nom.lib
+.dc Vgs 0 4 0.1V Vds 0 10 2V
+.probe
+.end
+
+**** 11/09/15 19:22:34 *********** Evaluation PSpice (Nov 1999) **************
+
+ n-JFET transfer characteristics  Id v/s Vgs
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J2N3819         
+               NJF             
+         VTO   -3            
+        BETA    1.304000E-03 
+      LAMBDA    2.250000E-03 
+          IS   33.570000E-15 
+         ISR  322.400000E-15 
+       ALPHA  311.700000E-06 
+          VK  243.6          
+          RD    1            
+          RS    1            
+         CGD    1.600000E-12 
+         CGS    2.414000E-12 
+           M     .3622       
+       VTOTC   -2.500000E-03 
+     BETATCE    -.5          
+          KF    9.882000E-18 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

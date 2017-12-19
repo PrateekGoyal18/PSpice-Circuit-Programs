@@ -1,0 +1,89 @@
+
+**** 11/12/15 18:49:06 *********** Evaluation PSpice (Nov 1999) **************
+
+ single tuned amplifier
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+J1 1 2 0 J2n3819
+R1 1 0 2k
+C1 1 0 7.958n
+L1 1 0 3.18u
+Vin 2 0 ac 10m sin(0 12 50)
+.ac dec 10 10 20meg
+.lib nom.lib
+.probe
+.end
+
+**** 11/12/15 18:49:06 *********** Evaluation PSpice (Nov 1999) **************
+
+ single tuned amplifier
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               J2n3819         
+               NJF             
+         VTO   -3            
+        BETA    1.304000E-03 
+      LAMBDA    2.250000E-03 
+          IS   33.570000E-15 
+         ISR  322.400000E-15 
+       ALPHA  311.700000E-06 
+          VK  243.6          
+          RD    1            
+          RS    1            
+         CGD    1.600000E-12 
+         CGS    2.414000E-12 
+           M     .3622       
+       VTOTC   -2.500000E-03 
+     BETATCE    -.5          
+          KF    9.882000E-18 
+
+
+**** 11/12/15 18:49:06 *********** Evaluation PSpice (Nov 1999) **************
+
+ single tuned amplifier
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    1)    0.0000  (    2)    0.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    Vin         -1.167E-29
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

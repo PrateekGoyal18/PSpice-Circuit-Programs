@@ -1,0 +1,15 @@
+*UJT CHARACTER
+X1 b2 e b1 2N2646
+q1 e b p q12N2907A
+q2 b b p q22N2907A
+.model q12N2907A npn
+.model q22N2907A npn
+c e 0 0.1u IC=1
+r b 0 10k
+rb2 p b2 1k 
+rb1 b2 0 5
+vpp p 0 dc 10
+.tran 0.01m 4m 0 0.01m UIC
+.lib nom.lib
+.probe 
+.end

@@ -1,0 +1,17 @@
+
+Q1 2 1 3 Q2N2222
+r1 1 2 50k
+r2 1 0 10k
+re 3 6 1k
+rL 4 0 10k
+c1 1 5 1u
+c2 3 4 10u
+Vcc 2 0 22V
+Vee 0 6 22V
+Vin 5 0 ac 0.1mV sin(0 0.1 1k)
+
+.tran 50u 4m 50u
+.ac dec 10 1 20k
+.lib eval.lib
+.probe
+.end

@@ -1,0 +1,11 @@
+n-JFET transfer characteristics  Id v/s Vgs
+
+Vgs 0 1 4V
+Vds 2 0 10V
+J1 2 1 0 J2N3819
+
+.lib nom.lib
+.dc Vgs 0 4 0.1V Vds 0 10 2V
+.probe
+.end
+

@@ -1,0 +1,15 @@
+Class b push-pull amplifier and determine its THD
+
+Q1 3 1 2 Q2N2222
+Q2 2 1 4 Q2N3906
+rL 2 0 1k
+Vcc 3 0 22V
+Vee 0 4 22V
+
+Vin 1 0 ac 0.1mV sin(0 0.1mV 1k)
+.lib eval.lib
+.ac dec 10 1 20k
+.tran 50u 4m 50u
+.four 1k 10 V(2)
+*.probe
+.end

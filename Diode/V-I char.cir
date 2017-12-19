@@ -1,0 +1,9 @@
+
+D1 1 2 D1N4002
+R1 2 0 1K
+V1 1 0 DC 1
+
+.lib eval.lib
+.dc lin 0 10 0.01
+.probe
+.end

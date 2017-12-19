@@ -1,0 +1,11 @@
+Self bias circuit. Measure Ic and Vce
+ 
+Vcc 3 0 20
+Rc 2 3 20k
+Rb 1 2 200k
+Q1 2 1 0 Q2N2222
+
+.op
+.lib nom.lib
+.probe
+.end

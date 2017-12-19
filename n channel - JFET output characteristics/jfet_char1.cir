@@ -1,0 +1,11 @@
+n-JFET drain characteristics  Id v/s Vds
+
+Vgs 0 1 4V
+Vds 2 0 10V
+J1 2 1 0 J2N3819
+
+.lib nom.lib
+.dc lin Vds 0 10 2V Vgs 0 4 1V
+.probe
+.end
+

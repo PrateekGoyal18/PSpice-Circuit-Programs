@@ -1,0 +1,24 @@
+double tuned amplifier
+
+Vin 1 0 ac 10m
+Vcc 0 6 15
+Rs 1 2 500
+Ls 2 0 1m
+Cs 2 0 1n
+Cc1 2 3 1u
+R2 4 0 5k
+L2 3 4 1m
+L3 3 5 1m
+R1 5 6 47k
+Ce 6 7 1u
+Re 6 7 10k
+Le 6 7 1n
+Cc2 7 8 1u
+RL 8 0 20k
+Rc 9 0 2k
+Cc3 9 0 10u
+Q1 7 3 9 Q2N3906
+.lib nom.lib
+.ac dec 10 10 20MEG
+.probe
+.end

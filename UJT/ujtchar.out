@@ -1,0 +1,58 @@
+
+**** 11/09/15 14:27:58 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *UJT CHARACTER
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+X1 1 2 3 2N2646
+.lib nom.lib
+i1 0 2 dc 1 
+rb1 3 0 10 
+rb2 1 p 100
+vbb p 0 dc 10 
+.dc lin i1 0 3m 0.01m vbb list 2 4 6 8 10 12
+.probe 
+.end
+
+**** 11/09/15 14:27:58 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *UJT CHARACTER
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X1.x1.x1.x1.x1.dio 
+          IS  128.100000E-12 
+          RS    1            
+
+
+
+          JOB CONCLUDED
+
+**** 11/09/15 14:27:58 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *UJT CHARACTER
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .53
+

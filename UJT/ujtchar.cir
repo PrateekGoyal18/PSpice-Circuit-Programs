@@ -1,0 +1,10 @@
+*UJT CHARACTER
+X1 1 2 3 2N2646
+.lib nom.lib
+i1 0 2 dc 1 
+rb1 3 0 10 
+rb2 1 p 100
+vbb p 0 dc 10 
+.dc lin i1 0 3m 0.01m vbb list 2 4 6 8 10 12
+.probe 
+.end

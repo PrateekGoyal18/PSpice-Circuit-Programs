@@ -1,0 +1,24 @@
+*Op Amp 
+
+
+X1 2 3 P N 4 UA741
+X2 0 5 P N 6 UA741
+X3 0 7 P N 8 UA741
+VP P 0 DC 10 
+VN N 0 DC -10
+C1 5 6 0.1UF 
+C2 7 8 0.1UF
+R5 4 5 1.59K
+R6 6 7 1.59K
+R4 3 4 10K
+R1 3 8 10K
+R2 1 2 10k
+R3 2 6 4.14K
+V1 1 0 ac 1
+
+.LIB EVAL.LIB
+
+*.tran 0.01m 2m 0 0.01m
+.ac dec 20 1 10meg
+.probe
+.end

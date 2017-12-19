@@ -1,0 +1,59 @@
+
+**** 11/09/15 14:43:39 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *ujt relaxation
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+x1 b2 e b1 2N2646
+.lib nom.lib 
+c e 0 0.1u IC=1
+r p e 10k
+rb2 p b2 1k
+rb1 b1 0 5 
+vp p 0 dc 10 
+.tran 0.01m 4m 0 0.01m UIC
+.probe 
+.end
+
+**** 11/09/15 14:43:39 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *ujt relaxation
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               x1.x1.x1.x1.x1.dio 
+          IS  128.100000E-12 
+          RS    1            
+
+
+
+          JOB CONCLUDED
+
+**** 11/09/15 14:43:39 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *ujt relaxation
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .45
+

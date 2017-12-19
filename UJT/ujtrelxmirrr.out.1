@@ -1,0 +1,32 @@
+
+**** 11/09/15 14:48:29 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *UJT CHARACTER
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+X1 b2 e b1 2N2646
+q1 e b p q12N2907A
+q2 b b p q22N2907A
+.model q12N2907A npn
+.model q22N2907A npn
+c e 0 0.1u IC=1
+r b 0 10k
+rb2 p b2 1k 
+rb2 b2 0 5
+
+ERROR(ORPSIM-15089): Can not re-define rb2. rb2 is either a system defined variable or has already been defined
+----$
+ERROR(ORPSIM-16371): Extra text on line
+vpp p 0 dc 10
+.tran 0.01m 4m 0 0.01m UIC
+.lib nom.lib
+.probe 
+.end
+

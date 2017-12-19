@@ -1,0 +1,10 @@
+MOSFET characteristics Id v/s Vgs
+
+Vgs 1 0 8V
+Vds 2 0 20V
+M1 2 1 0 0 IRF150
+
+.lib nom.lib
+.dc lin Vgs 0 8 1V  Vds 0 20 5V
+.probe
+.end

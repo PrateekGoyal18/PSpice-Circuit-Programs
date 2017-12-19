@@ -1,0 +1,11 @@
+single tuned amplifier
+
+J1 1 2 0 J2N3819
+R1 1 0 2k
+C1 1 0 7.958n
+L1 1 0 3.18u
+Vin 2 0 ac 10m sin(0 12 50)
+.ac dec 10 10 20meg
+.lib nom.lib
+.probe
+.end

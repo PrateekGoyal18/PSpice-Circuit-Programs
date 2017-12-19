@@ -1,0 +1,82 @@
+
+**** 11/09/15 21:52:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ MOSFET characteristics Id v/s Vgs
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+Vgs 1 0 8V
+Vds 2 0 20V
+M1 2 1 0 0 IRF150
+
+.lib nom.lib
+.dc lin Vgs 0 8 1V  Vds 0 20 5V
+.probe
+.end
+
+**** 11/09/15 21:52:19 *********** Evaluation PSpice (Nov 1999) **************
+
+ MOSFET characteristics Id v/s Vgs
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+       KAPPA    1.000000E-12 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .06
+

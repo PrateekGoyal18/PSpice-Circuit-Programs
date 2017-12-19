@@ -1,0 +1,10 @@
+* half wave
+D1 1 2 D1N4002
+R1 0 2 1K
+V1 1 0 SIN(1 10 100)
+.LIB EVAL.LIB 
+.TRAN 0.1m 50m 30m 0.1m
+.PROBE
+.END 
+
+

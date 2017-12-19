@@ -1,0 +1,101 @@
+
+**** 11/09/15 14:51:17 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *UJT CHARACTER
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+X1 b2 e b1 2N2646
+q1 e b p q12N2907A
+q2 b b p q22N2907A
+.model q12N2907A npn
+.model q22N2907A npn
+c e 0 0.1u IC=1
+r b 0 10k
+rb2 p b2 1k 
+rb1 b2 0 5
+vpp p 0 dc 10
+.tran 0.01m 4m 0 0.01m UIC
+.lib nom.lib
+.probe 
+.end
+
+**** 11/09/15 14:51:17 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *UJT CHARACTER
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X1.x1.x1.x1.x1.dio 
+          IS  128.100000E-12 
+          RS    1            
+
+
+**** 11/09/15 14:51:17 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *UJT CHARACTER
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               q12N2907A       q22N2907A       
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  100.000000E-18  100.000000E-18 
+          BF  100             100            
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+
+          JOB CONCLUDED
+
+**** 11/09/15 14:51:17 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ *UJT CHARACTER
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .20
+
